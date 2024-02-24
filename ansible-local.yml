@@ -1,0 +1,12 @@
+---
+- name: Update Homebrew on My Local Machine
+  hosts: localhost
+  gather_facts: false
+
+  tasks:
+    - name: Update Homebrew
+      command: "brew update"
+
+    - name: Upgrade installed packages
+      command: "brew upgrade"
+
